@@ -19,10 +19,6 @@ body{
     font-family: var(--ff);
 }
 
-.page{
-
-    margin: auto;
-}
 
 header{
     display: flex;
@@ -31,6 +27,8 @@ header{
     align-items: center;
     padding: 0 3.2rem;
     margin-bottom: 9.3rem;
+    padding: 0 3.4rem 9.3rem 3.2rem;
+    width: 100%;
 }
 
 header h1{
@@ -49,7 +47,12 @@ header p{
     line-height: normal;
 }
 
-#teste{
+header img:first-child{
+    width: 36.4rem;
+    height: 37rem;
+}
+
+#seta{
     width: 5.9rem;
     height: 10rem;
 }
@@ -60,13 +63,16 @@ main{
     align-items: center;
 }
 
+main section:first-child{
+    background-color: var(--main);
+}
+
 section{
     padding: 5.2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5rem;
-    background-color: var(--main);
 }
 
 .card{
@@ -92,6 +98,151 @@ section{
     font-weight: 600;
     line-height: normal;
 }
+
+fieldset{
+    border: none;
+}
+
+fieldset legend{
+    color: var(--color-h1);
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 4.3rem;
+}
+
+.fieldset-wrapper{
+    width: 34rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.input-wrapper {
+    padding: 12px 16px 12px 14px;
+    border-radius: 16px;
+    border: 1.5px solid #312D64;
+}
+
+.input-wrapper input {
+
+    border: none;
+    background-color: var(--back);
+}
+
+.input-wrapper textarea {
+
+    border: none;
+    background-color: var(--back);
+}
+
+form button{
+    height: 4.5rem;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background-color: var(--color-p);
+    color: white;
+    border: none;
+    font-family: var(--ff);
+    margin-top: 2.4rem;
+
+}
+
+footer{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: var(--main);
+    padding: 16px;
+}
+
+@media(min-width:900px) {
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10.9rem;
+        margin-bottom: 9.3rem;
+    }
+
+
+    header h1{
+        margin-top: 0;
+        color: var(--color-h1);
+        font-size: 5.8rem;
+        font-weight: 900;
+        line-height: normal;
+    }
+    
+    header p{
+        margin-bottom: 3.5rem;
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    header img:first-child{
+        width: 719.36px;
+        height: 732.357px;
+    }
+
+    #grid{
+        order: 1;
+    }
+
+    #imagem1{
+        order: 2;
+    }
+    
+    #seta{
+        width: 5.9rem;
+        height: 10rem;
+    }
+
+    main section:first-child{
+        background-color: var(--main);
+        padding: 5.2rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*gap: 5rem;*/
+    }
+
+    form{
+
+        width: 592px;
+    }
+
+    .two{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        padding-left: 90px;
+    }
+
+    .fieldset-wrapper{
+        width: 100%;
+    }
+
+    .star{
+        background-image: url(assets/img5.png);
+        width: 644px;
+        height: 612px;
+
+    }
+
+    
+
+
+}
+
 
 
 
